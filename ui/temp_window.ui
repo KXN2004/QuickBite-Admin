@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>main_window</class>
+ <widget class="QMainWindow" name="main_window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>437</width>
+    <height>602</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>359</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="central_widget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLineEdit" name="searchbar">
+        <property name="statusTip">
+         <string/>
+        </property>
+        <property name="inputMask">
+         <string/>
+        </property>
+        <property name="placeholderText">
+         <string>Search for Items...</string>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboBox">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="statusTip">
+         <string>Filter according to Item Type</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>All Items</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../assets/icon_resource.qrc">
+           <normaloff>:/Users/kevin/PycharmProjects/QuickBite/gui/assets/icons/icons/all_items.svg</normaloff>:/Users/kevin/PycharmProjects/QuickBite/gui/assets/icons/icons/all_items.svg</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Breakfast</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../assets/icon_resource.qrc">
+           <normaloff>:/Users/kevin/PycharmProjects/QuickBite/gui/assets/icons/icons/filter_breakfast.svg</normaloff>:/Users/kevin/PycharmProjects/QuickBite/gui/assets/icons/icons/filter_breakfast.svg</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Lunch</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../assets/icon_resource.qrc">
+           <normaloff>:/Users/kevin/PycharmProjects/QuickBite/gui/assets/icons/icons/filter_lunch.svg</normaloff>:/Users/kevin/PycharmProjects/QuickBite/gui/assets/icons/icons/filter_lunch.svg</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Snacks</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../assets/icon_resource.qrc">
+           <normaloff>:/Users/kevin/PycharmProjects/QuickBite/gui/assets/icons/icons/filter_snacks.svg</normaloff>:/Users/kevin/PycharmProjects/QuickBite/gui/assets/icons/icons/filter_snacks.svg</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Soft Drinks</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../assets/icon_resource.qrc">
+           <normaloff>:/Users/kevin/PycharmProjects/QuickBite/gui/assets/icons/icons/filter_softdrinks.svg</normaloff>:/Users/kevin/PycharmProjects/QuickBite/gui/assets/icons/icons/filter_softdrinks.svg</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Beverages</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../assets/icon_resource.qrc">
+           <normaloff>:/Users/kevin/PycharmProjects/QuickBite/gui/assets/icons/icons/filter_beverages.svg</normaloff>:/Users/kevin/PycharmProjects/QuickBite/gui/assets/icons/icons/filter_beverages.svg</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Ice Cream</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../assets/icon_resource.qrc">
+           <normaloff>:/Users/kevin/PycharmProjects/QuickBite/gui/assets/icons/icons/filter_icecream.svg</normaloff>:/Users/kevin/PycharmProjects/QuickBite/gui/assets/icons/icons/filter_icecream.svg</iconset>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QScrollArea" name="scroll_area">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+      <widget class="QWidget" name="scroll_area_widget_contents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>411</width>
+         <height>483</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QGroupBox" name="menu_item">
+          <property name="minimumSize">
+           <size>
+            <width>111</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Chicken Biryani</string>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <spacer name="left_spacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QLabel" name="price_label">
+             <property name="text">
+              <string>Price:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="price">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="suffix">
+              <string/>
+             </property>
+             <property name="prefix">
+              <string>₹ </string>
+             </property>
+             <property name="maximum">
+              <number>999</number>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="center_spacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QLabel" name="quantity_label">
+             <property name="text">
+              <string>Quantity:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="quantity">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="suffix">
+              <string> serves</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="right_spacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <spacer name="vertical_spacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>17</width>
+            <height>302</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>437</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="item">
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="statusTip">
+     <string/>
+    </property>
+    <property name="title">
+     <string>Item</string>
+    </property>
+    <addaction name="add_action"/>
+    <addaction name="remove_action"/>
+   </widget>
+   <widget class="QMenu" name="app">
+    <property name="title">
+     <string>App</string>
+    </property>
+    <addaction name="info_action"/>
+    <addaction name="quit_action"/>
+   </widget>
+   <widget class="QMenu" name="menuFilter">
+    <property name="title">
+     <string>Filter</string>
+    </property>
+    <addaction name="filter_breakfast"/>
+    <addaction name="filter_lunch"/>
+    <addaction name="separator"/>
+    <addaction name="filter_snacks"/>
+    <addaction name="filter_softdrinks"/>
+    <addaction name="filter_beverages"/>
+    <addaction name="filter_icecream"/>
+   </widget>
+   <widget class="QMenu" name="sync">
+    <property name="title">
+     <string>Refresh</string>
+    </property>
+    <widget class="QMenu" name="auto_sync">
+     <property name="title">
+      <string>Auto Sync</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../assets/icon_resource.qrc">
+       <normaloff>:/Users/kevin/PycharmProjects/QuickBite/gui/assets/icons/icons/auto_sync.svg</normaloff>:/Users/kevin/PycharmProjects/QuickBite/gui/assets/icons/icons/auto_sync.svg</iconset>
+     </property>
+     <addaction name="sync_15s"/>
+     <addaction name="sync_30s"/>
+     <addaction name="sync_1m"/>
+    </widget>
+    <addaction name="refresh"/>
+    <addaction name="auto_sync"/>
+   </widget>
+   <addaction name="app"/>
+   <addaction name="item"/>
+   <addaction name="menuFilter"/>
+   <addaction name="sync"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="add_action">
+   <property name="icon">
+    <iconset resource="../assets/icon_resource.qrc">
+     <normaloff>:/Users/kevin/PycharmProjects/QuickBite/gui/assets/icons/icons/add_button.svg</normaloff>:/Users/kevin/PycharmProjects/QuickBite/gui/assets/icons/icons/add_button.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Add</string>
+   </property>
+   <property name="statusTip">
+    <string>Add an item to the menu</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+   <property name="shortcutVisibleInContextMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="remove_action">
+   <property name="icon">
+    <iconset resource="../assets/icon_resource.qrc">
+     <normaloff>:/Users/kevin/PycharmProjects/QuickBite/gui/assets/icons/icons/remove_button.svg</normaloff>:/Users/kevin/PycharmProjects/QuickBite/gui/assets/icons/icons/remove_button.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Remove</string>
+   </property>
+   <property name="statusTip">
+    <string>Click to remove a menu item</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+   <property name="shortcutVisibleInContextMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="info_action">
+   <property name="icon">
+    <iconset resource="../assets/icon_resource.qrc">
+     <normaloff>:/Users/kevin/PycharmProjects/QuickBite/gui/assets/icons/icons/info_action.svg</normaloff>:/Users/kevin/PycharmProjects/QuickBite/gui/assets/icons/icons/info_action.svg</iconset>
+   </property>
+   <property name="text">
+    <string>About</string>
+   </property>
+   <property name="statusTip">
+    <string>Click to learn more about the app</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+   <property name="shortcutVisibleInContextMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="quit_action">
+   <property name="icon">
+    <iconset resource="../assets/icon_resource.qrc">
+     <normaloff>:/Users/kevin/PycharmProjects/QuickBite/gui/assets/icons/icons/quit_action.svg</normaloff>:/Users/kevin/PycharmProjects/QuickBite/gui/assets/icons/icons/quit_action.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Quit</string>
+   </property>
+   <property name="statusTip">
+    <string>Click to quit the app</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+   <property name="shortcutVisibleInContextMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="filter_breakfast">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../assets/icon_resource.qrc">
+     <normaloff>:/Users/kevin/PycharmProjects/QuickBite/gui/assets/icons/icons/filter_breakfast.svg</normaloff>:/Users/kevin/PycharmProjects/QuickBite/gui/assets/icons/icons/filter_breakfast.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Breakfast</string>
+   </property>
+  </action>
+  <action name="filter_lunch">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../assets/icon_resource.qrc">
+     <normaloff>:/Users/kevin/PycharmProjects/QuickBite/gui/assets/icons/icons/filter_lunch.svg</normaloff>:/Users/kevin/PycharmProjects/QuickBite/gui/assets/icons/icons/filter_lunch.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Lunch</string>
+   </property>
+  </action>
+  <action name="filter_snacks">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../assets/icon_resource.qrc">
+     <normaloff>:/Users/kevin/PycharmProjects/QuickBite/gui/assets/icons/icons/filter_snacks.svg</normaloff>:/Users/kevin/PycharmProjects/QuickBite/gui/assets/icons/icons/filter_snacks.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Snacks</string>
+   </property>
+  </action>
+  <action name="filter_softdrinks">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../assets/icon_resource.qrc">
+     <normaloff>:/Users/kevin/PycharmProjects/QuickBite/gui/assets/icons/icons/filter_softdrinks.svg</normaloff>:/Users/kevin/PycharmProjects/QuickBite/gui/assets/icons/icons/filter_softdrinks.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Soft Drinks</string>
+   </property>
+  </action>
+  <action name="filter_beverages">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../assets/icon_resource.qrc">
+     <normaloff>:/Users/kevin/PycharmProjects/QuickBite/gui/assets/icons/icons/filter_beverages.svg</normaloff>:/Users/kevin/PycharmProjects/QuickBite/gui/assets/icons/icons/filter_beverages.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Beverages</string>
+   </property>
+  </action>
+  <action name="refresh">
+   <property name="icon">
+    <iconset resource="../assets/icon_resource.qrc">
+     <normaloff>:/Users/kevin/PycharmProjects/QuickBite/gui/assets/icons/icons/action_refresh.svg</normaloff>:/Users/kevin/PycharmProjects/QuickBite/gui/assets/icons/icons/action_refresh.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Refresh</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="sync_15s">
+   <property name="text">
+    <string>Every 15s</string>
+   </property>
+  </action>
+  <action name="sync_30s">
+   <property name="text">
+    <string>Every 30s</string>
+   </property>
+  </action>
+  <action name="sync_1m">
+   <property name="text">
+    <string>Every 1min</string>
+   </property>
+  </action>
+  <action name="actionEvery_5min">
+   <property name="text">
+    <string>Every 5min</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>Every 10min</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>Every 15min</string>
+   </property>
+  </action>
+  <action name="actionEvery_30min">
+   <property name="text">
+    <string>Every 30min</string>
+   </property>
+  </action>
+  <action name="actionEvery_1hr">
+   <property name="text">
+    <string>Every 1hr</string>
+   </property>
+  </action>
+  <action name="filter_icecream">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../assets/icon_resource.qrc">
+     <normaloff>:/Users/kevin/PycharmProjects/QuickBite/gui/assets/icons/icons/filter_icecream.svg</normaloff>:/Users/kevin/PycharmProjects/QuickBite/gui/assets/icons/icons/filter_icecream.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Ice Cream</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../assets/icon_resource.qrc"/>
+  <include location="../assets/icon_resource.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>quit_action</sender>
+   <signal>triggered()</signal>
+   <receiver>main_window</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>218</x>
+     <y>300</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

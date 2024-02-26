@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "quickbite-admin"
+version = "0.1.0"
+description = "Admin App for QuickBite"
+authors = ["Kevin Nadar <kevinxaviernadar@gmail.com>"]
+license = "MIT License"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+httpx = "^0.27.0"
+pydantic = "^2.6.2"
+pyqt5 = "^5.15.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
